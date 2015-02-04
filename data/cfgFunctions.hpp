@@ -43,25 +43,7 @@
 			class setKilledEH;
 			class setRespawnEH;
 		};
-		class Injury {
-			file = "fnc\injury";
-			class aidInjured;
-			class carryInjured;
-			class dragInjured;
-			class dropInjured;
-			class injuredIsBeingDragged;
-			class injuredIsBeingHealed;
-			class injuredIsDraggable;
-			class injuredIsDroppable;
-			class injuredIsHealable;
-			class isMedic;
-			class useFirstAidKit;
-			class useMedkit;
-			class handleInjuryDamage;
-			class injuredBloodloss {ext=".fsm";};
-			class injuredEffects;
-			class unitInAgony;
-		};
+
 		class Interactions {
 			file = "fnc\interact";
 			class checkActionBusy;
