@@ -340,27 +340,3 @@
 			class updateLocalTask;
 		};
 	};
-//};
-	class tcb_ais {
-		tag = "tcb";
-		class ais {
-			file = "scripts\ais_injury\func";
-			class handleDamage;
-			class keyUnbind;
-			class firstAid;
-			class isHealable;
-			class progressBar;
-			class isMedic;
-			class drag;
-			class carry;
-			class drop;
-			class injuredEffects;
-			class progressBarInit;
-			class sendaihealer;
-			class delbody;
-			class quote;
-			class deadcam;
-			class lookingForWoundedMates;
-			class checklauncher;
-		};
-	};
