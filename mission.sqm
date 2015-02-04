@@ -38,14 +38,17 @@ class Mission
 		"mas_ukf_sftg_veh",
 		"AGM_Core",
 		"AGM_Medical",
-		"JS_S_FA18X"
+		"JS_S_FA18X",
+		"kyo_MH47E",
+		"fza_ah64_US"
 	};
 	addOnsAuto[]=
 	{
 		"mas_ukf_sftg_b",
 		"mas_ukf_sftg_veh",
-		"A3_Armor_F_Panther",
 		"AGM_Core",
+		"kyo_MH47E",
+		"fza_ah64_US",
 		"AGM_Medical",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Flags",
@@ -88,7 +91,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			side="WEST";
@@ -538,10 +541,10 @@ class Mission
 			side="WEST";
 			class Vehicles
 			{
-				items=6;
+				items=4;
 				class Item0
 				{
-					position[]={15151.576,17.855198,17330.178};
+					position[]={15152.685,17.85813,17329.088};
 					azimut=42.979301;
 					special="NONE";
 					id=34;
@@ -549,25 +552,24 @@ class Mission
 					vehicle="B_mas_uk_pilot_F";
 					player="PLAY CDG";
 					leader=1;
-					rank="SERGEANT";
 					skill=0.40000001;
-					description="Support Leader (Pilot/Crewman)";
+					description="Support Pilot/Crewman";
 				};
 				class Item1
 				{
-					position[]={15152.685,17.85813,17329.088};
+					position[]={15151.795,17.858225,17328.127};
 					azimut=42.979301;
 					special="NONE";
 					id=35;
 					side="WEST";
-					vehicle="B_mas_uk_pilot_F";
+					vehicle="B_mas_uk_Helicrew_F";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
 				};
 				class Item2
 				{
-					position[]={15151.795,17.858225,17328.127};
+					position[]={15152.88,17.86072,17327.34};
 					azimut=42.979301;
 					special="NONE";
 					id=36;
@@ -579,34 +581,10 @@ class Mission
 				};
 				class Item3
 				{
-					position[]={15150.582,17.855167,17329.207};
-					azimut=42.979301;
-					special="NONE";
-					id=37;
-					side="WEST";
-					vehicle="B_mas_uk_Helipilot_F";
-					player="PLAY CDG";
-					skill=0.40000001;
-					description="Support Pilot/Crewman";
-				};
-				class Item4
-				{
-					position[]={15152.88,17.86072,17327.34};
-					azimut=42.979301;
-					special="NONE";
-					id=38;
-					side="WEST";
-					vehicle="B_mas_uk_Helicrew_F";
-					player="PLAY CDG";
-					skill=0.40000001;
-					description="Support Pilot/Crewman";
-				};
-				class Item5
-				{
 					position[]={15153.745,17.860634,17328.271};
 					azimut=42.979301;
 					special="NONE";
-					id=39;
+					id=37;
 					side="WEST";
 					vehicle="B_mas_uk_Helipilot_F";
 					player="PLAY CDG";
@@ -627,9 +605,9 @@ class Mission
 					azimut=-191.129;
 					offsetY=5.5;
 					special="NONE";
-					id=40;
+					id=38;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					leader=1;
 					skill=0.60000002;
 					text="AA_1";
@@ -640,9 +618,9 @@ class Mission
 					position[]={15536.199,3.6483836,15870.312};
 					azimut=-228.70399;
 					special="NONE";
-					id=41;
+					id=39;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					skill=0.60000002;
 					text="AA_2";
 					init="this allowDamage false; (group driver this) setGroupID [""AA-BTRY Base""]; driver this disableAI ""MOVE""; this addEventHandler [""fired"", ""AA_2 setVehicleAmmo 1""];";
@@ -652,9 +630,9 @@ class Mission
 					position[]={15227.273,4.4614792,15832.81};
 					azimut=-137.19;
 					special="NONE";
-					id=42;
+					id=40;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					skill=0.60000002;
 					text="AA_3";
 					init="this allowDamage false; (group driver this) setGroupID [""AA-BTRY Base""]; driver this disableAI ""MOVE""; this addEventHandler [""fired"", ""AA_3 setVehicleAmmo 1""];";
@@ -673,9 +651,9 @@ class Mission
 					azimut=-252.129;
 					offsetY=5.5;
 					special="NONE";
-					id=43;
+					id=41;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					leader=1;
 					skill=0.60000002;
 					text="AA_4";
@@ -684,11 +662,11 @@ class Mission
 				class Item1
 				{
 					position[]={15259.345,19.185308,17100.518};
-					azimut=-386.0593;
+					azimut=-386.05899;
 					special="NONE";
-					id=44;
+					id=42;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					skill=0.60000002;
 					text="AA_5";
 					init="this allowDamage false; (group driver this) setGroupID [""AA-BTRY Coast""]; driver this disableAI ""MOVE""; this addEventHandler [""fired"", ""AA_5 setVehicleAmmo 1""];";
@@ -698,12 +676,46 @@ class Mission
 					position[]={15254.646,19.241022,17077.344};
 					azimut=-137.19;
 					special="NONE";
-					id=45;
+					id=43;
 					side="WEST";
-					vehicle="B_APC_Tracked_01_AA_F";
+					vehicle="B_mas_uk_APC_Tracked_01_AA_F";
 					skill=0.60000002;
 					text="AA_6";
 					init="this allowDamage false; (group driver this) setGroupID [""AA-BTRY Coast""]; driver this disableAI ""MOVE""; this addEventHandler [""fired"", ""AA_6 setVehicleAmmo 1""];";
+				};
+			};
+		};
+		class Item7
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=2;
+				class Item0
+				{
+					position[]={14345.871,18.694248,16340.981};
+					azimut=203.06499;
+					special="NONE";
+					id=44;
+					side="WEST";
+					vehicle="B_mas_uk_pilot_F";
+					player="PLAY CDG";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.40000001;
+					description="Support Leader (Pilot/Crewman)";
+				};
+				class Item1
+				{
+					position[]={14409.165,19.018757,16326.252};
+					azimut=203.06499;
+					special="NONE";
+					id=45;
+					side="WEST";
+					vehicle="B_mas_uk_Helipilot_F";
+					player="PLAY CDG";
+					skill=0.40000001;
+					description="Support Pilot/Crewman";
 				};
 			};
 		};
@@ -746,7 +758,7 @@ class Mission
 			position[]={15200.523,17.940001,17289.879};
 			id=49;
 			side="EMPTY";
-			vehicle="B_mas_uk_Truck_02_covered_F";
+			vehicle="B_mas_uk_Truck_02_transport_F";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
 		};
@@ -761,7 +773,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={14949.865,17.292725,17220.842};
+			position[]={15053.916,17.278791,17308.396};
 			azimut=134.717;
 			id=51;
 			side="EMPTY";
@@ -771,7 +783,7 @@ class Mission
 		};
 		class Item6
 		{
-			position[]={14956.188,17.275558,17226.486};
+			position[]={15060.239,17.199953,17314.041};
 			azimut=134.717;
 			id=52;
 			side="EMPTY";
@@ -801,8 +813,8 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={14942.102,17.699873,17187.777};
-			azimut=132.52901;
+			position[]={15073.279,17.212517,17316.492};
+			azimut=225.35652;
 			id=55;
 			side="EMPTY";
 			vehicle="B_mas_uk_MBT_01_mlrs_F";
@@ -848,7 +860,7 @@ class Mission
 			azimut=87.784302;
 			id=59;
 			side="EMPTY";
-			vehicle="B_mas_uk_Heli_Transport_02_F";
+			vehicle="kyo_MH47E_HC";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsLiftChopper";
 		};
@@ -864,18 +876,18 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={15079.393,17.91,17148.572};
+			position[]={15081.895,17.91,17147.273};
 			azimut=118.744;
 			offsetY=0.2;
 			id=61;
 			side="EMPTY";
-			vehicle="B_mas_uk_Heli_light_03_F";
+			vehicle="fza_ah64d_b2e";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
 		class Item16
 		{
-			position[]={15055.155,17.301809,17304.697};
+			position[]={14949.101,17.297615,17219.916};
 			azimut=-224.52901;
 			id=62;
 			side="EMPTY";
@@ -885,7 +897,7 @@ class Mission
 		};
 		class Item17
 		{
-			position[]={15062.629,17.234802,17312.029};
+			position[]={14955.649,17.278675,17225.707};
 			azimut=-224.52901;
 			id=63;
 			side="EMPTY";
@@ -1784,8 +1796,8 @@ class Mission
 		};
 		class Item105
 		{
-			position[]={15107.307,17.91,17209.35};
-			azimut=134.717;
+			position[]={14344.035,18.872473,16322.146};
+			azimut=188.61322;
 			id=151;
 			side="EMPTY";
 			vehicle="JS_S_FA18X";
@@ -1794,8 +1806,8 @@ class Mission
 		};
 		class Item106
 		{
-			position[]={15128.479,17.91,17230.914};
-			azimut=134.717;
+			position[]={14400.157,19.269119,16305.145};
+			azimut=200.45433;
 			id=152;
 			side="EMPTY";
 			vehicle="JS_S_FA18X";
@@ -1805,7 +1817,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=59;
+		items=60;
 		class Item0
 		{
 			position[]={15191.997,17.924004,17367};
@@ -1912,6 +1924,7 @@ class Mission
 		{
 			position[]={14918.298,17.91,16722.121};
 			name="service_1";
+			text="Service";
 			type="b_maint";
 			a=0.69999999;
 			b=0.69999999;
@@ -1940,20 +1953,20 @@ class Mission
 		};
 		class Item19
 		{
-			position[]={15191.125,17.925167,17367.256};
+			position[]={15180.901,17.91,17229.076};
 			name="protection_zone";
 			markerType="ELLIPSE";
 			type="Empty";
-			colorName="Color4_FD_F";
 			fillName="SolidBorder";
-			a=500;
-			b=500;
+			a=300;
+			b=300;
 			drawBorder=1;
 		};
 		class Item20
 		{
 			position[]={14950.776,17.491505,17208.965};
 			name="mark_armour";
+			text="Armour";
 			type="b_armor";
 			a=0.69999999;
 			b=0.69999999;
@@ -1962,6 +1975,7 @@ class Mission
 		{
 			position[]={15055.431,17.169161,17313.15};
 			name="mark_arty";
+			text="Artillery";
 			type="b_art";
 			a=0.69999999;
 			b=0.69999999;
@@ -2110,7 +2124,7 @@ class Mission
 		};
 		class Item42
 		{
-			position[]={15096.009,17.810635,17184.197};
+			position[]={15095.903,17.803616,17186.223};
 			name="return_point_east";
 			text=" Return Point";
 			type="Empty";
@@ -2118,7 +2132,7 @@ class Mission
 		};
 		class Item43
 		{
-			position[]={15095.951,17.889736,17182.803};
+			position[]={15095.951,17.806789,17186.223};
 			name="return_point_resistance";
 			text=" Return Point";
 			type="Empty";
@@ -2133,7 +2147,7 @@ class Mission
 		};
 		class Item45
 		{
-			position[]={15485.021,0,15806.734};
+			position[]={15485.23,0.059436917,15808.794};
 			name="return_point_east_marine";
 			text=" Return Point Marina";
 			type="Empty";
@@ -2141,7 +2155,7 @@ class Mission
 		};
 		class Item46
 		{
-			position[]={15485.045,0,15804.891};
+			position[]={15485.219,0.058568474,15808.799};
 			name="return_point_guerrila_marine";
 			text=" Return Point Marina";
 			type="Empty";
@@ -2236,6 +2250,15 @@ class Mission
 			text="Marina Base";
 			type="respawn_naval";
 			colorName="ColorWEST";
+		};
+		class Item59
+		{
+			position[]={14375.525,18.910219,16319.469};
+			name="air";
+			text="Air";
+			type="b_maint";
+			a=0.69999999;
+			b=0.69999999;
 		};
 	};
 	class Sensors
