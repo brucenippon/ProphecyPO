@@ -18,6 +18,9 @@ if(!isDedicated && !PO3_debug) then {
 	if!(PO3_debug) then { [270,900,150] call PO3_fnc_introsequence };
 	[] spawn { sleep 20; 8 fadeMusic 0; };
 };
+//External Logistics (Future Mod Support)
+	[] execVM "scripts\IgiLoad\IgiLoadInit.sqf";
+};
 
 ["PO3_taskmaster"] call PO3_fnc_runTaskSequence;
 
