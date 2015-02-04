@@ -40,10 +40,11 @@ class Mission
 		"AGM_Medical",
 		"JS_S_FA18X",
 		"kyo_MH47E",
-		"fza_ah64_US",
 		"agm_explosives",
 		"agm_logistics",
-		"task_force_radio_items"
+		"task_force_radio_items",
+		"A3_Structures_F_Ind_Cargo",
+		"A3_Structures_F_System"
 	};
 	addOnsAuto[]=
 	{
@@ -53,9 +54,7 @@ class Mission
 		"agm_explosives",
 		"agm_logistics",
 		"task_force_radio_items",
-		"AGM_Core",
 		"kyo_MH47E",
-		"fza_ah64_US",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Boat_F_Boat_Armed_01",
@@ -71,6 +70,7 @@ class Mission
 		"A3_Structures_F_Mil_BagFence",
 		"A3_Animals_F_Rabbit",
 		"JS_S_FA18X",
+		"A3_Structures_F_System",
 		"a3_map_altis"
 	};
 	randomSeed=11588837;
@@ -995,7 +995,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=107;
+		items=115;
 		class Item0
 		{
 			position[]={15185.71,17.882557,17339.871};
@@ -1100,7 +1100,7 @@ class Mission
 			azimut=45.307999;
 			id=60;
 			side="EMPTY";
-			vehicle="AGM_Box_Misc";
+			vehicle="AGM_Box_Medical";
 			skill=0.60000002;
 			text="box2";
 			init="this allowDamage false; this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""scripts\VAS\open.sqf""];";
@@ -1154,7 +1154,7 @@ class Mission
 			offsetY=0.2;
 			id=65;
 			side="EMPTY";
-			vehicle="fza_ah64d_b2e";
+			vehicle="B_mas_uk_Heli_light_03_F";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1194,7 +1194,7 @@ class Mission
 			azimut=48.1535;
 			id=69;
 			side="EMPTY";
-			vehicle="AGM_Box_Misc";
+			vehicle="AGM_Box_Medical";
 			skill=0.60000002;
 			text="box1";
 			init="this allowDamage false; this addAction[""<t color='#ff1111'>Virtual Ammobox</t>"", ""scripts\VAS\open.sqf""];";
@@ -2087,10 +2087,91 @@ class Mission
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
+		class Item107
+		{
+			position[]={15177.708,17.937931,17365.785};
+			azimut=48.1535;
+			id=157;
+			side="EMPTY";
+			vehicle="Box_NATO_AmmoVeh_F";
+			skill=0.60000002;
+			init="nul = [this] execVM ""customCrate.sqf""; this allowDamage false;";
+		};
+		class Item108
+		{
+			position[]={15108.256,17.91,17135.869};
+			azimut=-64.432701;
+			offsetY=0.2;
+			id=158;
+			side="EMPTY";
+			vehicle="B_mas_uk_Heli_light_03_unarmed_F";
+			skill=0.60000002;
+			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
+		};
+		class Item109
+		{
+			position[]={15106.987,17.91,17135.678};
+			azimut=27.875751;
+			id=159;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			lock="LOCKED";
+			skill=0.60000002;
+		};
+		class Item110
+		{
+			position[]={15105.612,17.91,17132.5};
+			azimut=-64.432701;
+			offsetY=0.2;
+			id=160;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item111
+		{
+			position[]={15108.743,17.91,17139.686};
+			azimut=-64.432701;
+			offsetY=0.2;
+			id=161;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item112
+		{
+			position[]={15111.409,17.91,17134.469};
+			azimut=-64.432701;
+			offsetY=0.2;
+			id=162;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item113
+		{
+			position[]={15102.948,17.91,17138.643};
+			azimut=-64.432701;
+			offsetY=0.2;
+			id=163;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item114
+		{
+			position[]={15082.27,17.91,17146.74};
+			azimut=117.32639;
+			id=164;
+			side="EMPTY";
+			vehicle="Land_HelipadSquare_F";
+			lock="LOCKED";
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=60;
+		items=66;
 		class Item0
 		{
 			position[]={15191.997,17.924004,17367};
@@ -2534,6 +2615,50 @@ class Mission
 			type="b_maint";
 			a=0.69999999;
 			b=0.69999999;
+		};
+		class Item60
+		{
+			position[]={14993.516,-0.30122685,14817.186};
+			name="tfr1";
+			text="Radio Channels:";
+			type="mil_dot";
+			colorName="ColorRed";
+		};
+		class Item61
+		{
+			position[]={15000.793,0.19417469,14632.721};
+			name="tfr1_1";
+			text="Air (Ghostrider): 90.5";
+			type="mil_dot";
+		};
+		class Item62
+		{
+			position[]={14999.242,-0.1099174,14546.104};
+			name="tfr1_2";
+			text="Choppers (Avenger): 76.8";
+			type="mil_dot";
+		};
+		class Item63
+		{
+			position[]={14998.284,0.49333042,14716.416};
+			name="tfr1_3";
+			text="Command (Camp Ginge): 97.1";
+			type="mil_dot";
+		};
+		class Item64
+		{
+			position[]={14998.833,-0.28699547,14452.561};
+			name="tfr1_4";
+			text="Ground Units (Apache): 85.4";
+			type="mil_dot";
+		};
+		class Item65
+		{
+			position[]={390.28134,-0.12179034,28248.906};
+			name="TFR$";
+			text="You must be in TS if you are flying an Aircraft, If you do not know how to fly, then dont fly, abuse will get you banned !!";
+			type="Empty";
+			colorName="ColorRed";
 		};
 	};
 	class Sensors
