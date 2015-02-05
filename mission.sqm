@@ -3603,7 +3603,7 @@ class Mission
 			leader=1;
 			skill=1;
 			text="BTC_1_1";
-			init="this allowDamage false; this setFlagTexture ""signs\fs.jpg"";";
+			init="this allowDamage false;";
 		};
 		class Item214
 		{
@@ -4318,7 +4318,7 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""signs\fs.jpg""]; this allowDamage false";
+			init="this allowDamage false";
 		};
 		class Item281
 		{
@@ -4330,7 +4330,7 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""signs\fs.jpg""]; this allowDamage false";
+			init=" this allowDamage false;";
 		};
 		class Item282
 		{
@@ -4342,7 +4342,7 @@ class Mission
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""signs\fs.jpg""]; this allowDamage false";
+			init="this allowDamage false;";
 		};
 		class Item283
 		{
