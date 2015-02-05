@@ -35,7 +35,7 @@ if(isNull _display) then {
 	_display = uinamespace getvariable ["PO3_screentext",objNull];
 };
 
-_sitrep = "|{P}a}t}r}o}l} {O}p}e}r}a}t}i}o}n}s} {3}.}1|}B}y} {E{i{g{h{t{y{S{i{x";
+_sitrep = "|{P}R}O}P}H}E}C}Y} {P}A}T}R}O}L} {O}P}'}S}|}B}y} {E{i{g{h{t{y{S{i{x";
 _sitrepArray = toarray _sitrep;
 {_sitrepArray set [_foreachindex,tostring [_x]]} foreach _sitrepArray;
 
