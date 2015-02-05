@@ -22,6 +22,14 @@ class CfgFunctions {
 	#include "data\cfgFunctions.hpp"
 	#include "scripts\VAS\VAScfgFunctions.hpp"
 };
+class CfgSounds {
+	sounds[] = {dso,dso1,dso2,dso3,dso8};
+	class dso {name="dso";sound[]={"\sounds\dso.ogg",db,1.0};titles[] = {};};
+	class dso1 {name="dso1";sound[]={"\sounds\dso1.ogg",db,1.0};titles[] = {};};
+	class dso2 {name="dso2";sound[]={"\sounds\dso2.ogg",db,1.0};titles[] = {};};
+	class dso3 {name="dso3";sound[]={"\sounds\dso3.ogg",db,1.0};titles[] = {};};
+	class dso8 {name="dso8";sound[]={"\sounds\dso8.ogg",db,1.0};titles[] = {};};
+};
 class CfgNotifications {
 	#include "data\cfgNotifications.hpp"
 };
