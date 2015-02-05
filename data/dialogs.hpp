@@ -1047,6 +1047,9 @@ class 86RListBox {
 	colorSelect[] = {0,0,0,1};
 	colorSelectBackground2[] = {1,1,1,0.5};
 	colorSelectBackground[] = {0.95,0.95,0.95,1};
+	colorPicture[] = {1,1,1,1};
+	colorPictureSelected[] = {1,1,1,1};
+	colorPictureDisabled[] = {1,1,1,1};
 	colorShadow[] = {0,0,0,0.5};
 	colorText[] = {1,1,1,1};
 	font = GUI_FONT_NORMAL;

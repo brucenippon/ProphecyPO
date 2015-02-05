@@ -61,14 +61,14 @@ class PO3_param_ambient_title {
 		title = "Ambient Ground Patrols";
 		values[]={0,400,600,800,1200};
 		texts[]={$STR_PO3_TEXT_OFF,$STR_PO3_TEXT_LOW,$STR_PO3_TEXT_MED,$STR_PO3_TEXT_HIGH,$STR_PO3_TEXT_ULTRA};
-		default=600;
+		default=800;
 		code = "PO3_param_ambientpatrolgnd = if(%1 > 0)then{ PO3_count_ambientpatrolgnd = %1; true}else{false};";
 	};
 	class param_PO3_ambientradius {
 		title = "Ambient Spawn Radius";
 		values[]={0,500,1000,1500,2000,2500,5000,10000};
 		texts[]={$STR_PO3_TEXT_OFF,"500","1000","1500","2000","2500","5000","10000"};
-		default=500;
+		default=2000;
 		code = "PO3_radius_ambientpatrolgnd = %1;";
 	};
 class PO3_param_injury_title {

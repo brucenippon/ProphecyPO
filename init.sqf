@@ -17,9 +17,9 @@ if(!isDedicated && !PO3_debug) then {
 	[5,""] spawn PO3_fnc_camera_fadein;
 	if!(PO3_debug) then { [270,900,150] call PO3_fnc_introsequence };
 	[] spawn { sleep 20; 8 fadeMusic 0; };
-};
+	
 //External Logistics (Future Mod Support)
-	[] execVM "scripts\IgiLoad\IgiLoadInit.sqf";
+[] execVM "scripts\IgiLoad\IgiLoadInit.sqf";
 };
 
 ["PO3_taskmaster"] call PO3_fnc_runTaskSequence;

@@ -5,11 +5,11 @@ PO3_missions = [
 	 "PO3_task_m01_attackBase"			// <!-- TEST
 	,"PO3_task_m02_attackConvoyArmour"	// <!-- TEST
 //	,"PO3_task_m03_attackConvoySupply"	// <!-- TEST
-//	,"PO3_task_m04_captureIntel"		// <!-- TEST
+	,"PO3_task_m04_captureIntel"		// <!-- TEST
 	,"PO3_task_m05_captureOfficer"		// <!-- TEST
 	,"PO3_task_m06_captureTown"			// <!-- TEST
 	,"PO3_task_m07_captureVehicle"		// <!-- TEST
-	,"PO3_task_m08_clearMinefield"		// <!-- TEST
+//	,"PO3_task_m08_clearMinefield"		// <!-- TEST
 //	,"PO3_task_m09_clearRunway"			// <!-- TEST
 //	,"PO3_task_m10_clearSeaMinefield"	// <!-- TEST
 	,"PO3_task_m11_createSupplies"		// <!-- TEST

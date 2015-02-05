@@ -1,6 +1,6 @@
 if(isNil "PO3__VAR_ETCXH_FITCXRE") then { PO3__VAR_ETCXH_FITCXRE = true };
 if(isNil "PO3_protector_enable") then { PO3_protector_enable = true };
-
+if(TRUE)exitwith{};
 private["_vehicle "];
 
 _vehicle = _this;

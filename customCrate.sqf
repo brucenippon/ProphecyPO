@@ -6,10 +6,10 @@ removeAllWeapons _itemcrate;
 
 if (isServer) then {
   clearItemCargoGlobal _itemCrate;
-  _itemCrate addItemCargoGlobal ["AGM_Bandage", 500];
-  _itemCrate addItemCargoGlobal ["AGM_Morphine", 500];
-  _itemCrate addItemCargoGlobal ["AGM_Epipen", 500];
-  _itemCrate addItemCargoGlobal ["AGM_Bloodbag", 500];
-  _itemCrate addItemCargoGlobal ["AGM_Bloodbag", 500];
+  _itemCrate addItemCargoGlobal ["AGM_Bandage", 1000];
+  _itemCrate addItemCargoGlobal ["AGM_Morphine", 1000];
+  _itemCrate addItemCargoGlobal ["AGM_Epipen", 1000];
+  _itemCrate addItemCargoGlobal ["AGM_Bloodbag", 1000];
+  _itemCrate addItemCargoGlobal ["AGM_EarBuds", 1000];
 
 }

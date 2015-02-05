@@ -9,12 +9,12 @@
 ///////////////////////////////
 // Clean abandonded vehicles //
 ///////////////////////////////
-pvpfw_cleanup_cleanAbandonded = false; // true or false, depending on wether you want abandoned vehicles to be deleted
+pvpfw_cleanup_cleanAbandonded = true; // true or false, depending on wether you want abandoned vehicles to be deleted
 pvpfw_cleanup_abandonedFromFaction = ["BLU_F","OPF_F","IND_F"]; // Vehicles from these factions will be cleaned up
 pvpfw_cleanUp_abandonRadius = 200; // If no unit is closer than the specified distance, the removal countdown will start
 pvpfw_cleanup_abandondTimer = 360; // The vehicle will be removed after the specified time
 pvpfw_cleanUp_dontCleanUpAround = ["respawn_west","respawn_east","respawn_civilian","respawn_vehicle_guerrila"]; //do not clean abandoned vehicles around these markers
-pvpfw_cleanUp_dontCleanUpAroundDistance = 500; // Dont clean if the vehicle is in this range of one of the above markers.
+pvpfw_cleanUp_dontCleanUpAroundDistance = 700; // Dont clean if the vehicle is in this range of one of the above markers.
 
 //////////////////////////////
 // Clean destroyed vehicles //
