@@ -1,27 +1,25 @@
-["INIT",format["Executing %1 init.sqf",missionName],true] call PO3_fnc_log;
-
-[] execVM "Patrol_Ops_3.sqf";
-[] execVM "scripts\module_performance\init.sqf";
-
-if(!isDedicated) then {
-	Receiving_finish = false;
-	onPreloadFinished { Receiving_finish = true; onPreloadFinished {}; };
-	WaitUntil{ !(isNull player) && !isNil "PO3_core_init" && Receiving_finish };
-}else{
-	WaitUntil{!isNil "PO3_core_init"};
-};
-
-if(!isDedicated && !PO3_debug) then {
-	playMusic "LeadTrack01a_F";
-	0 fadeMusic 1;
-	[5,""] spawn PO3_fnc_camera_fadein;
-	if!(PO3_debug) then { [270,900,150] call PO3_fnc_introsequence };
-	[] spawn { sleep 20; 8 fadeMusic 0; };
+/*
+@filename: init.sqf
+Author:
 	
-//External Logistics (Future Mod Support)
-[] execVM "scripts\IgiLoad\IgiLoadInit.sqf";
-};
+	Quiksilver
 
-["PO3_taskmaster"] call PO3_fnc_runTaskSequence;
+Last modified:
 
-[] call PO3_fnc_outrosequence;
+	12/05/2014
+	
+Description:
+
+	Things that may run on both server and client.
+	Deprecated initialization file, still using until the below is correctly partitioned between server and client.
+______________________________________________________*/
+
+
+call compile preprocessFile "scripts\=BTC=_revive\=BTC=_revive_init.sqf";		// revive
+DAC_Basic_Value = 0;execVM "DAC\DAC_Config_Creator.sqf";
+[]execVM "eos\OpenMe.sqf";
+[] spawn {call compile preprocessFileLineNumbers "EPD\Ied_Init.sqf";};
+
+
+//-------------------------------------------------- Headless Client
+
